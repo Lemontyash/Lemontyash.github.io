@@ -487,7 +487,7 @@ let arr_obj = [];
 //рендеринг
 
 
-confirm('WASD to move, Space - go up, Shift - go down');
+confirm('WASD to move, Space - go up, Shift - go down,Arrow - camera_rotate');
 
 
 
