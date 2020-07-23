@@ -416,6 +416,35 @@ scene.add( cylinder12 ); // Добавляем в сцену
 
      }
 
+     if(event.code == "ArrowUp"){
+
+         camera.rotation.x += 0.01;
+
+
+     }
+
+     if(event.code == "ArrowDown"){
+
+         camera.rotation.x -= 0.01;
+
+
+     }
+
+
+    if(event.code == "ArrowLeft"){
+
+          camera.rotation.y += 0.01;
+
+
+    }
+
+    if(event.code == "ArrowRight"){
+
+    camera.rotation.y -= 0.01;
+
+
+    }
+
    });
 
 
@@ -455,8 +484,7 @@ let arr_obj = [];
 //рендеринг
 
 
-confirm('WASD to move, Space - go up, Shift - go down');
-
+confirm('WASD to move, Space - go up, Shift - go down,Camera - Arrow');
 
 
 
@@ -466,8 +494,6 @@ confirm('WASD to move, Space - go up, Shift - go down');
 function render() {
 
     requestAnimationFrame( render );
-
-
 
 
 raycaster.setFromCamera( mouse, camera );
@@ -689,14 +715,6 @@ renderer.render( scene, camera );
 
   // cylinder5.rotation.x += 0.01;
 
-
-
-
-
-
-  sphere.rotation.x -= 0.01;
-
-  sphere.rotation.y -= 0.01;
 
   renderer.render( scene, camera );
 }
