@@ -1,5 +1,5 @@
 
-
+let user_num = prompt("Введите число:",100);
 
 
 let body = document.querySelector('body');
